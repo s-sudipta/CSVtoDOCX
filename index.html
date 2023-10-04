@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
+  <title>CSV to Word Converter</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="heading">
+      <h1>CSV to DOCX</h1>
+      <h5>S-Sudipta</h5>
+    </div>
+    <div class="container">
+    <div style="margin-top: 50px;">
+        <button id="choosefile">Browser...</button>
+        <input id="fileSelect" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" /> 
+        <span id="filePath">choose a csv file.....</span>
+    </div>
+    <div style="margin-top: 25px;">
+        <button id="convertBtn">Convert CSV to Word</button>
+        <div id="display_csv_data"></div>    
+    </div>
+    <div style="margin-top: 25px;">
+      <p id="outputLink" style="display: none;">The output docx file:</p>
+      <a id="outputPath"></a>
+    </div>
+  </div>
+  <script defer src="renderer.js"></script>
+  <script defer src="structure.js"></script>
+</body>
+</html>
